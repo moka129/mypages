@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GC Timeline | moka129</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    nav {
+      margin-bottom: 48px;
+    }
+
+    nav a {
+      color: #666;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      margin-bottom: 56px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #666;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .screenshot {
+      margin-top: 36px;
+      text-align: center;
+    }
+
+    .screenshot img {
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .screenshot figcaption {
+      margin-top: 12px;
+      color: #888;
+      font-size: 13px;
+    }
+
+    section {
+      margin-top: 48px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 22px;
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.8;
+    }
+
+    .features {
+      display: grid;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .feature {
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+    }
+
+    .feature h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .feature p {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .privacy-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-top: 1px solid #ddd;
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <nav>
+      <a href="../">← Projects</a>
+    </nav>
+
+    <header>
+      <h1>GC Timeline</h1>
+      <p class="subtitle">
+        Google Calendarの予定を、iPhoneのホーム画面から
+        タイムライン形式で確認するための個人開発ウィジェットです。
+      </p>
+    </header>
+
+    <figure class="screenshot">
+      <img
+        src="./images/widget.jpg"
+        alt="GC TimelineのiPhoneホーム画面ウィジェット"
+      >
+      <figcaption>GC Timeline Widget</figcaption>
+    </figure>
+
+    <section>
+      <h2>About</h2>
+
+      <p>
+        GC Timelineは、日々の予定をアプリを開かずに確認できるようにすることを
+        目的として開発したiOS向けカレンダーウィジェットです。
+        Google Calendar APIを利用して予定情報を取得し、
+        一日のスケジュールをタイムライン形式で表示します。
+      </p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+
+      <div class="features">
+
+        <div class="feature">
+          <h3>Timeline View</h3>
+          <p>
+            一日の予定を時間軸に沿って表示し、
+            空いている時間と予定のある時間を確認できます。
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Home Screen Widget</h3>
+          <p>
+            iPhoneのホーム画面から、その日の予定を確認できます。
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Google Calendar</h3>
+          <p>
+            Google Calendar APIを利用し、
+            カレンダーに登録されている予定情報を取得して表示します。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Google Calendar Data</h2>
+
+      <p>
+        Google Calendarから取得した情報は、
+        カレンダー予定をウィジェット上に表示するために使用します。
+        取得したGoogleユーザーデータを広告やマーケティング目的で
+        使用することはありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>Privacy</h2>
+
+      <p>
+        Google Calendar APIを通じて取得する情報の取り扱いについては、
+        Privacy Policyをご確認ください。
+      </p>
+
+      <a class="privacy-link" href="./privacy/">
+        Privacy Policy →
+      </a>
+    </section>
+
+    <footer>
+      © moka129
+    </footer>
+
+  </main>
+</body>
+</html>
